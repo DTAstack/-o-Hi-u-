@@ -10,3 +10,4 @@ namespace BlockChain
         public DateTime TimeStamp { get; set; }
         public Transaction[] Transactions { get; set; }
         public int Proof { get; set; }
+        public string LastBlockHash { get; set; }
