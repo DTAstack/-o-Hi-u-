@@ -11,3 +11,5 @@ namespace BlockChain
         public Transaction[] Transactions { get; set; }
         public int Proof { get; set; }
         public string LastBlockHash { get; set; }
+    }
+}
