@@ -11,3 +11,5 @@ namespace BlockChain
     public class Chain
     {
         public Chain()
+        {
+            Blocks = new List<Block>{ 
