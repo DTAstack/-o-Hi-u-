@@ -8,3 +8,6 @@ using System.Text;
 
 namespace BlockChain
 {
+    public class Chain
+    {
+        public Chain()
