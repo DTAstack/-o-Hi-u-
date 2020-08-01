@@ -13,3 +13,9 @@ namespace BlockChain
         public Chain()
         {
             Blocks = new List<Block>{ 
+                new Block
+                {
+                    Index = 0,
+                    Transactions = new Transaction[0],
+                    LastBlockHash = string.Empty,
+                    Proof = 1,
