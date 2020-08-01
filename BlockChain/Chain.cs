@@ -29,3 +29,6 @@ namespace BlockChain
         public List<Block> Blocks { get; set; }
         public List<Transaction> CurrentTransactions { get; set; }
         
+
+        public static bool ValidateProof(Block lastBlock, int proof)
+        {
