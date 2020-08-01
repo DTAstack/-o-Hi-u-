@@ -19,3 +19,9 @@ namespace BlockChain
                     Transactions = new Transaction[0],
                     LastBlockHash = string.Empty,
                     Proof = 1,
+                    TimeStamp = DateTime.UtcNow
+                }
+            };
+            CurrentTransactions = new List<Transaction>();
+            
+        }
