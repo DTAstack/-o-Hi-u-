@@ -25,3 +25,7 @@ namespace BlockChain
             CurrentTransactions = new List<Transaction>();
             
         }
+
+        public List<Block> Blocks { get; set; }
+        public List<Transaction> CurrentTransactions { get; set; }
+        
