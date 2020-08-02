@@ -32,3 +32,6 @@ namespace BlockChain
 
         public static bool ValidateProof(Block lastBlock, int proof)
         {
+            var hashString = Hash((long)lastBlock.Proof * proof);
+            return hashString.EndsWith("00000=");
+        }
