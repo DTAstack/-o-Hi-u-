@@ -35,3 +35,10 @@ namespace BlockChain
             var hashString = Hash((long)lastBlock.Proof * proof);
             return hashString.EndsWith("00000=");
         }
+
+        public static string Hash(long hashInt)
+        {
+            var sha = new SHA256Managed();
+            var hash = sha.ComputeHash(Encoding.UTF8.GetBytes(hashInt.ToString()));
+            return Convert.ToBase64String(hash);
+        }
