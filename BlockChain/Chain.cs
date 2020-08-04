@@ -42,3 +42,5 @@ namespace BlockChain
             var hash = sha.ComputeHash(Encoding.UTF8.GetBytes(hashInt.ToString()));
             return Convert.ToBase64String(hash);
         }
+
+        public static string Hash(Block block)
