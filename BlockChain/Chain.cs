@@ -44,3 +44,5 @@ namespace BlockChain
         }
 
         public static string Hash(Block block)
+        {
+            var sha = new SHA256Managed();
