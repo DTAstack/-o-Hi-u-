@@ -49,3 +49,7 @@ namespace BlockChain
             var blockString = block.LastBlockHash + block.TimeStamp.ToString("O") + block.Index + block.Proof;
             blockString = block.Transactions.Aggregate(blockString, (current, blockTransaction) => current + blockTransaction.Amount.ToString() + blockTransaction.From.ToString() + blockTransaction.To.ToString());
             var hash = sha.ComputeHash(Encoding.UTF8.GetBytes(blockString));
+            return Convert.ToBase64String(hash);
+        }
+
+        public bool MineBlock(int proof, ulong nodeId)
