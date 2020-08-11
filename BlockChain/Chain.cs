@@ -53,3 +53,7 @@ namespace BlockChain
         }
 
         public bool MineBlock(int proof, ulong nodeId)
+        {
+            if (!ValidateProof(Blocks.Last(), proof)) return false;
+
+            CurrentTransactions.Add(new Transaction
