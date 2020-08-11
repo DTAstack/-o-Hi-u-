@@ -59,3 +59,5 @@ namespace BlockChain
             CurrentTransactions.Add(new Transaction
             {
                 Amount = 1,
+                From = 0,
+                To = nodeId
