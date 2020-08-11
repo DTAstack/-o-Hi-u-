@@ -57,3 +57,5 @@ namespace BlockChain
             if (!ValidateProof(Blocks.Last(), proof)) return false;
 
             CurrentTransactions.Add(new Transaction
+            {
+                Amount = 1,
