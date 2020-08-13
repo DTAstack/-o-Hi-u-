@@ -67,3 +67,7 @@ namespace BlockChain
 
             var block = new Block
             {
+                Index = lastBlock.Index + 1,
+                Transactions = CurrentTransactions.ToArray(),
+                Proof = proof,
+                LastBlockHash = Hash(lastBlock),
