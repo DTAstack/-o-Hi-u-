@@ -71,3 +71,10 @@ namespace BlockChain
                 Transactions = CurrentTransactions.ToArray(),
                 Proof = proof,
                 LastBlockHash = Hash(lastBlock),
+                TimeStamp = DateTime.UtcNow
+            };
+            Blocks.Add(block);
+            CurrentTransactions = new List<Transaction>();
+
+            return true;
+        }
