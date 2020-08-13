@@ -61,3 +61,9 @@ namespace BlockChain
                 Amount = 1,
                 From = 0,
                 To = nodeId
+            });
+
+            var lastBlock = Blocks.Last();
+
+            var block = new Block
+            {
