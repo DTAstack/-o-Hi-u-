@@ -5,3 +5,8 @@ using System.Text;
 
 namespace BlockChain
 {
+    public class Node
+    {
+        public string Url { get; set; }
+    }
+}
