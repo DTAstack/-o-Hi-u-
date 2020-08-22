@@ -1,1 +1,1 @@
-﻿namespace B
+﻿namespace Bloc
