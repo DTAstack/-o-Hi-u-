@@ -1,1 +1,1 @@
-﻿namespace BlockChai
+﻿namespace BlockChain
