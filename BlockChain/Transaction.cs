@@ -1,3 +1,3 @@
 ﻿namespace BlockChain
 {
-    public cla
+    public class
