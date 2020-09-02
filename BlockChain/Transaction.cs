@@ -1,3 +1,3 @@
 ﻿namespace BlockChain
 {
-    public class Tran
+    public class Transaction
