@@ -2,4 +2,4 @@
 {
     public class Transaction
     {
-        public ulon
+        public ulong F
