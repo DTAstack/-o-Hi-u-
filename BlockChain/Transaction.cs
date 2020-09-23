@@ -2,4 +2,4 @@
 {
     public class Transaction
     {
-        public ulong From {
+        public ulong From { get
