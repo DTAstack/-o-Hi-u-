@@ -4,4 +4,4 @@
     {
         public ulong From { get; set; }
         public ulong To { get; set; }
-        public int Amount {
+        public int Amount { get; 
