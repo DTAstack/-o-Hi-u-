@@ -6,3 +6,4 @@
         public ulong To { get; set; }
         public int Amount { get; set; }
     }
+}
