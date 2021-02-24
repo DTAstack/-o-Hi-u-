@@ -9,4 +9,4 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.All" Versio
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.
