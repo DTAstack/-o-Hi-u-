@@ -14,4 +14,4 @@
   </ItemGroup>
 
   <ItemGroup>
-    <DotNetCliToolReference Incl
+    <DotNetCliToolReference Include="M
