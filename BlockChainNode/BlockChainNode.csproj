@@ -14,4 +14,4 @@
   </ItemGroup>
 
   <ItemGroup>
-    <DotNetCliToolReference Include="Microsoft.VisualStudio.W
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.Co
