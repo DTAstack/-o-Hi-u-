@@ -12,3 +12,8 @@ using Newtonsoft.Json;
 
 namespace BlockChainNode.Controllers
 {
+    [Produces("application/json")]
+    [Route("api/Mine")]
+    public class MineController : Controller
+    {
+        private readonly Chain _chain;
