@@ -21,3 +21,6 @@ namespace BlockChainNode.Controllers
         private BlockChainOptions _options;
 
         public MineController(Chain chain, List<Node> nodes, IOptions<BlockChainOptions> options)
+        {
+            _chain = chain;
+            _nodes = nodes;
