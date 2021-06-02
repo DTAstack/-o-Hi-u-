@@ -26,3 +26,6 @@ namespace BlockChainNode.Controllers
             _nodes = nodes;
             _options = options.Value;
         }
+
+        [HttpGet]
+        public IActionResult LastBlock()
