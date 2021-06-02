@@ -24,3 +24,5 @@ namespace BlockChainNode.Controllers
         {
             _chain = chain;
             _nodes = nodes;
+            _options = options.Value;
+        }
