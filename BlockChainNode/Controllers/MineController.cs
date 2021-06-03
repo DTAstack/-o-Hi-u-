@@ -31,3 +31,6 @@ namespace BlockChainNode.Controllers
         public IActionResult LastBlock()
         {
             return Ok(_chain.Blocks.Last());
+        }
+
+        [HttpPost]
