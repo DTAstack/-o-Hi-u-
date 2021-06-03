@@ -29,3 +29,5 @@ namespace BlockChainNode.Controllers
 
         [HttpGet]
         public IActionResult LastBlock()
+        {
+            return Ok(_chain.Blocks.Last());
