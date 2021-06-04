@@ -40,3 +40,10 @@ namespace BlockChainNode.Controllers
             System.IO.File.WriteAllText(_options.ChainFilePath, JsonConvert.SerializeObject(_chain));
 
             var last2 = _chain.Blocks.TakeLast(2).ToArray();
+
+            var resolveRequest = new ResolveRequest
+            {
+                LastBlockHash = last2[0].LastBlockHash,
+                LastBlockIndex = last2[0].Index,
+                NewBlock = last2[1]
+            };
