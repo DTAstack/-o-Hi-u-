@@ -34,3 +34,6 @@ namespace BlockChainNode.Controllers
         }
 
         [HttpPost]
+        public async Task<IActionResult> MineBlock([FromQuery]int proof, [FromQuery]ulong nodeId)
+        {
+            if (!_chain.MineBlock(proof, nodeId)) return Ok(false);
