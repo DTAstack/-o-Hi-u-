@@ -37,3 +37,6 @@ namespace BlockChainNode.Controllers
         public async Task<IActionResult> MineBlock([FromQuery]int proof, [FromQuery]ulong nodeId)
         {
             if (!_chain.MineBlock(proof, nodeId)) return Ok(false);
+            System.IO.File.WriteAllText(_options.ChainFilePath, JsonConvert.SerializeObject(_chain));
+
+            var last2 = _chain.Blocks.TakeLast(2).ToArray();
