@@ -51,3 +51,5 @@ namespace BlockChainNode.Controllers
             var httpClient = new HttpClient();
             var body = new StringContent(JsonConvert.SerializeObject(resolveRequest), Encoding.UTF8, "application/json");
             foreach (var node in _nodes)
+            {
+                await httpClient.PostAsync(new Uri(node.Url).AbsoluteUri + "api/resolve", body).ConfigureAwait(false);
