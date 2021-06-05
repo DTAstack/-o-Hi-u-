@@ -47,3 +47,7 @@ namespace BlockChainNode.Controllers
                 LastBlockIndex = last2[0].Index,
                 NewBlock = last2[1]
             };
+
+            var httpClient = new HttpClient();
+            var body = new StringContent(JsonConvert.SerializeObject(resolveRequest), Encoding.UTF8, "application/json");
+            foreach (var node in _nodes)
