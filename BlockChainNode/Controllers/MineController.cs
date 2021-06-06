@@ -53,3 +53,7 @@ namespace BlockChainNode.Controllers
             foreach (var node in _nodes)
             {
                 await httpClient.PostAsync(new Uri(node.Url).AbsoluteUri + "api/resolve", body).ConfigureAwait(false);
+            }
+            return Ok(true);
+        }
+    }
