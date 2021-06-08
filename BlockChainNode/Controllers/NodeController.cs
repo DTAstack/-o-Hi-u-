@@ -8,3 +8,10 @@ using System.Threading.Tasks;
 using BlockChain;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Rewrite.Internal.UrlActions;
+using Microsoft.Extensions.Options;
+using Newtonsoft.Json;
+
+namespace BlockChainNode.Controllers
+{
+    [Produces("application/json")]
