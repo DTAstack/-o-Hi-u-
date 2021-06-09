@@ -19,3 +19,7 @@ namespace BlockChainNode.Controllers
     public class NodeController : Controller
     {
         private readonly List<Node> _nodes;
+        private readonly Chain _chain;
+        private readonly BlockChainOptions _options;
+
+        public NodeController(List<Node> nodes, IOptions<BlockChainOptions> options, Chain chain)
