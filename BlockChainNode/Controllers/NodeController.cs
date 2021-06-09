@@ -23,3 +23,8 @@ namespace BlockChainNode.Controllers
         private readonly BlockChainOptions _options;
 
         public NodeController(List<Node> nodes, IOptions<BlockChainOptions> options, Chain chain)
+        {
+            _nodes = nodes;
+            _chain = chain;
+            _options = options.Value;
+        }
