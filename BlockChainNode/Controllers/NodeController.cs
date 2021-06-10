@@ -28,3 +28,7 @@ namespace BlockChainNode.Controllers
             _chain = chain;
             _options = options.Value;
         }
+
+        [HttpGet("status")]
+        public IActionResult Status()
+        {
