@@ -34,3 +34,8 @@ namespace BlockChainNode.Controllers
         {
             return Ok();
         }
+
+        [HttpPost("register/{url}")]
+        public IActionResult RegisterNode([FromRoute]string url)
+        {
+            if (_nodes.Count(n => n.Url == url) > 0) return NoContent();
