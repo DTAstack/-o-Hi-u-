@@ -32,3 +32,5 @@ namespace BlockChainNode.Controllers
         [HttpGet("status")]
         public IActionResult Status()
         {
+            return Ok();
+        }
