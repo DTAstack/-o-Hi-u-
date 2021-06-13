@@ -45,3 +45,7 @@ namespace BlockChainNode.Controllers
             {
                 Url = url
             });
+
+            System.IO.File.WriteAllText(_options.NodesFilePath, JsonConvert.SerializeObject(_nodes));
+
+            foreach (var node in _nodes)
