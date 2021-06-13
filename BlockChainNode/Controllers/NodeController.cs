@@ -39,3 +39,9 @@ namespace BlockChainNode.Controllers
         public IActionResult RegisterNode([FromRoute]string url)
         {
             if (_nodes.Count(n => n.Url == url) > 0) return NoContent();
+            if (!new HttpClient().GetAsync(new Uri(url).AbsoluteUri + "api/Node/status").Result.IsSuccessStatusCode) return new StatusCodeResult(410);
+
+            _nodes.Add(new Node
+            {
+                Url = url
+            });
