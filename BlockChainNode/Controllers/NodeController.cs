@@ -52,3 +52,10 @@ namespace BlockChainNode.Controllers
             {
                 new HttpClient().PostAsync(new Uri(node.Url) + $"register/{url}", new StringContent(string.Empty));
             }
+
+            return Accepted();
+        }
+
+        [HttpPost("resolve")]
+        public IActionResult ResolveBlocks([FromBody] ResolveRequest resolveRequest)
+        {
