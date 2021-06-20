@@ -61,3 +61,5 @@ namespace BlockChainNode.Controllers
         {
             _chain.MineBlock(resolveRequest.NewBlock.Proof, resolveRequest.NewBlock.Transactions.First(t => t.From == 0).To);
             return Ok();
+        }
+    }
