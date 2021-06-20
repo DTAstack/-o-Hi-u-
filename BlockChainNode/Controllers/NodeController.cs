@@ -49,3 +49,6 @@ namespace BlockChainNode.Controllers
             System.IO.File.WriteAllText(_options.NodesFilePath, JsonConvert.SerializeObject(_nodes));
 
             foreach (var node in _nodes)
+            {
+                new HttpClient().PostAsync(new Uri(node.Url) + $"register/{url}", new StringContent(string.Empty));
+            }
