@@ -11,3 +11,6 @@ namespace BlockChainNode
     {
         public int LastBlockIndex { get; set; }
         public string LastBlockHash { get; set; }
+        public Block NewBlock { get; set; }
+    }
+}
