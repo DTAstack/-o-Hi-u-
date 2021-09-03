@@ -7,4 +7,4 @@ using BlockChain;
 using BlockChainNode.Controllers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuratio
+using Microsoft.Extensions.Configuration;
