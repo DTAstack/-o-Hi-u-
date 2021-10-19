@@ -15,4 +15,4 @@ using Newtonsoft.Json;
 
 namespace BlockChainNode
 {
-    public class
+    public class 
