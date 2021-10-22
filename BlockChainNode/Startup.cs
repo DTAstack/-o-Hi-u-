@@ -15,4 +15,5 @@ using Newtonsoft.Json;
 
 namespace BlockChainNode
 {
-    public class Star
+    public class Startup
+ 
