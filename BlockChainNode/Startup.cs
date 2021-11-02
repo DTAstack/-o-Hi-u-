@@ -17,4 +17,4 @@ namespace BlockChainNode
 {
     public class Startup
     {
-        public Startup(IConfigurati
+        public Startup(IConfiguration 
