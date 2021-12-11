@@ -22,4 +22,4 @@ namespace BlockChainNode
             Configuration = configuration;
         }
 
-        public IConfiguration C
+        public IConfiguration Conf
