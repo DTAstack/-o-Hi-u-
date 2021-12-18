@@ -22,4 +22,4 @@ namespace BlockChainNode
             Configuration = configuration;
         }
 
-        public IConfiguration Configuration { g
+        public IConfiguration Configuration { get; }
