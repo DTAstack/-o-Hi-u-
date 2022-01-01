@@ -24,4 +24,4 @@ namespace BlockChainNode
 
         public IConfiguration Configuration { get; }
 
-        // This method gets 
+        // This method gets ca
