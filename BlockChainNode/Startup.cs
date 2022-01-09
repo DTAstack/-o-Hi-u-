@@ -24,4 +24,4 @@ namespace BlockChainNode
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runti
+        // This method gets called by the runtime. Us
