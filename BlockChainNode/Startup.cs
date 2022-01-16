@@ -24,4 +24,4 @@ namespace BlockChainNode
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add s
+        // This method gets called by the runtime. Use this method to add ser
