@@ -29,4 +29,4 @@ namespace BlockChainNode
         {
             services.AddMvc();
             services.AddOptions();
-            service
+            services.Co
