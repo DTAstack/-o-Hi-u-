@@ -29,4 +29,5 @@ namespace BlockChainNode
         {
             services.AddMvc();
             services.AddOptions();
-            services.Configure<BlockChainOptions>(options =
+            services.Configure<BlockChainOptions>(options =>
+ 
