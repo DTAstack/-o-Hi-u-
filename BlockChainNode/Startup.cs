@@ -31,4 +31,4 @@ namespace BlockChainNode
             services.AddOptions();
             services.Configure<BlockChainOptions>(options =>
             {
-                options.ChainFil
+                options.ChainFilePat
