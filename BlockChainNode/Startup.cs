@@ -32,4 +32,4 @@ namespace BlockChainNode
             services.Configure<BlockChainOptions>(options =>
             {
                 options.ChainFilePath = Configuration["Chain"];
-                options.NodesFilePath = Configuration
+                options.NodesFilePath = Configuration[
