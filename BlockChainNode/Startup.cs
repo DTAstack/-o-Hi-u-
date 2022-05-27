@@ -34,3 +34,4 @@ namespace BlockChainNode
                 options.ChainFilePath = Configuration["Chain"];
                 options.NodesFilePath = Configuration["Nodes"];
             });
+    
