@@ -35,4 +35,4 @@ namespace BlockChainNode
                 options.NodesFilePath = Configuration["Nodes"];
             });
             services.AddSingleton(sp => 
-                File.Exists(Configur
+                File.Exists(Configuration[
