@@ -38,4 +38,5 @@ namespace BlockChainNode
                 File.Exists(Configuration["Chain"]) 
                     ? JsonConvert.DeserializeObject<Chain>(File.ReadAllText(Configuration["Chain"])) 
                     : new Chain());
-            services.AddSingleton<List<Node>>(sp
+            services.AddSingleton<List<Node>>(sp =>
+ 
