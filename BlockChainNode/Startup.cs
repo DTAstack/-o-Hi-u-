@@ -39,4 +39,4 @@ namespace BlockChainNode
                     ? JsonConvert.DeserializeObject<Chain>(File.ReadAllText(Configuration["Chain"])) 
                     : new Chain());
             services.AddSingleton<List<Node>>(sp =>
-     
+        
