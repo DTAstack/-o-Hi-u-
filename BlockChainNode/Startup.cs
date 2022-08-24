@@ -40,4 +40,4 @@ namespace BlockChainNode
                     : new Chain());
             services.AddSingleton<List<Node>>(sp =>
                 File.Exists(Configuration["Nodes"])
-                    ? JsonConvert.DeserializeObject<
+                    ? JsonConvert.DeserializeObject<List<N
