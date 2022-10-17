@@ -42,3 +42,4 @@ namespace BlockChainNode
                 File.Exists(Configuration["Nodes"])
                     ? JsonConvert.DeserializeObject<List<Node>>(File.ReadAllText(Configuration["Chain"]))
                     : new List<Node>());
+ 
