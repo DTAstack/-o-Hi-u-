@@ -43,3 +43,5 @@ namespace BlockChainNode
                     ? JsonConvert.DeserializeObject<List<Node>>(File.ReadAllText(Configuration["Chain"]))
                     : new List<Node>());
         }
+
+   
