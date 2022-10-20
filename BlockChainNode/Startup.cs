@@ -44,4 +44,4 @@ namespace BlockChainNode
                     : new List<Node>());
         }
 
-        // This method get
+        // This method gets cal
