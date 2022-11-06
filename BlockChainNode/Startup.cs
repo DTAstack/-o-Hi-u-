@@ -44,4 +44,4 @@ namespace BlockChainNode
                     : new List<Node>());
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTT
+        // This method gets called by the runtime. Use this method to configure the HTTP r
