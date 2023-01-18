@@ -49,4 +49,4 @@ namespace BlockChainNode
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExcep
+                app.UseDeveloperExceptionPa
