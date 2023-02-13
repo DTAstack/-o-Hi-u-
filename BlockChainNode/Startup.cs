@@ -50,4 +50,4 @@ namespace BlockChainNode
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-       
+            
