@@ -52,4 +52,4 @@ namespace BlockChainNode
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseMv
+            app.UseMvc();
