@@ -18,3 +18,7 @@ namespace Miner
                     .SetBasePath(Directory.GetCurrentDirectory())
                     .AddJsonFile("appsettings.json")
                     .AddUserSecrets("Miner")
+                    .Build();
+
+                var nodeId = config["NodeId"];
+                var mineUrl = new Uri(args[0]);
