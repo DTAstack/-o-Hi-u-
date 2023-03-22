@@ -22,3 +22,5 @@ namespace Miner
 
                 var nodeId = config["NodeId"];
                 var mineUrl = new Uri(args[0]);
+
+                var httpClient = new HttpClient();
