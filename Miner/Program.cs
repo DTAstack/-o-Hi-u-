@@ -9,3 +9,9 @@ using Newtonsoft.Json;
 namespace Miner
 {
     class Program
+    {
+        static void Main(string[] args)
+        {
+            while (true)
+            {
+                var config = new ConfigurationBuilder()
