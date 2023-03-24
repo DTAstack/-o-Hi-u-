@@ -24,3 +24,9 @@ namespace Miner
                 var mineUrl = new Uri(args[0]);
 
                 var httpClient = new HttpClient();
+
+                var lastBlock = JsonConvert.DeserializeObject<Block>(httpClient
+                    .GetAsync(mineUrl.AbsoluteUri + "api/mine").Result
+                    .Content.ReadAsStringAsync().Result);
+
+                var random = new Random();
