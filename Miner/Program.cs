@@ -30,3 +30,6 @@ namespace Miner
                     .Content.ReadAsStringAsync().Result);
 
                 var random = new Random();
+
+                while (true)
+                {
