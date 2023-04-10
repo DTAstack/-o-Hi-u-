@@ -33,3 +33,5 @@ namespace Miner
 
                 while (true)
                 {
+                    var attempt = random.Next(int.MaxValue);
+                    if (!Chain.ValidateProof(lastBlock, attempt)) continue;
