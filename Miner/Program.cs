@@ -35,3 +35,7 @@ namespace Miner
                 {
                     var attempt = random.Next(int.MaxValue);
                     if (!Chain.ValidateProof(lastBlock, attempt)) continue;
+
+                    var response = httpClient.PostAsync(mineUrl.AbsoluteUri + $"api/mine?proof={attempt}&nodeId={nodeId}", new StringContent(string.Empty)).Result;
+
+                    if (!JsonConvert.DeserializeObject<bool>(response.Content.ReadAsStringAsync().Result)) continue;
