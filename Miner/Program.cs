@@ -39,3 +39,7 @@ namespace Miner
                     var response = httpClient.PostAsync(mineUrl.AbsoluteUri + $"api/mine?proof={attempt}&nodeId={nodeId}", new StringContent(string.Empty)).Result;
 
                     if (!JsonConvert.DeserializeObject<bool>(response.Content.ReadAsStringAsync().Result)) continue;
+
+                    Console.WriteLine("Success!");
+
+                    break;
