@@ -45,3 +45,6 @@ namespace Miner
                     break;
                 }
             }
+        }
+    }
+}
