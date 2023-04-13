@@ -43,3 +43,5 @@ namespace Miner
                     Console.WriteLine("Success!");
 
                     break;
+                }
+            }
