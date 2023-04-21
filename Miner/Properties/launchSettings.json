@@ -2,3 +2,7 @@
 {
   "profiles": {
     "Miner": {
+      "commandName": "Project",
+      "commandLineArgs": "http://localhost:52757"
+    }
+  }
